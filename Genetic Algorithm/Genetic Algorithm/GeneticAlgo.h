@@ -22,5 +22,7 @@ public:
 
 	GeneticAlgo();
 	~GeneticAlgo();
+	int objFunct(int i, int MAX);
+	float fitness(int i, int MAX);
 };
 

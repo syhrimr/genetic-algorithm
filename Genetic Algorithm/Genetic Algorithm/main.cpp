@@ -23,9 +23,16 @@ int main() {
 		int c = randomize(MAX);
 		int d = randomize(MAX);
 
+		// Initiate chrome
 		gA->chrome.push_back(new Chrome(a, b, c, d));
 
-		cout << gA->chrome[i]->cpu << " " << gA->chrome[i]->gpu << " " << gA->chrome[i]->ram << " " << gA->chrome[i]->hdd << endl;
+		// Debugging
+		cout << gA->chrome[i]->cpu << " "
+			<< gA->chrome[i]->gpu << " "
+			<< gA->chrome[i]->ram << " "
+			<< gA->chrome[i]->hdd << " = "
+			<< gA->objFunct(i, MAX) << " / "
+			<< gA->fitness(i, MAX) << endl;
 	}
 
 	return 0;
